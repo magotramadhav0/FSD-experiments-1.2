@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f4f7;
+}
+
+header, footer {
+    text-align: center;
+    background: #1f3c88;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.balance-box, .transaction-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#balance {
+    font-size: 24px;
+    color: green;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #1f3c88;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #162d63;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
